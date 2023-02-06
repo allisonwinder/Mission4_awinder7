@@ -46,7 +46,7 @@
         lettergrade = 'A';
     }
 
-    //and returns an output in a p tag on the html page within the form
-    $("#output").html("Your percentage is: " + results + "%    Your grade is: " + lettergrade);
+    //and returns an output in an alert on the html page within the form
+    alert("Your percentage is: " + results + "%    Your grade is: " + lettergrade);
 });
 

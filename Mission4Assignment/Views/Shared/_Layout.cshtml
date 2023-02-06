@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <!--This is the layout page that is seen on both pages-->
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <!--here is the icon for the website-->
+    <link rel="icon" type="~/image/x-icon" href="img/icons8-ski-16.png" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <nav id="navbarul">
+        <a asp-controller="Grades" asp-action="Index" id="navbarlist">Home</a>
+        <a asp-controller="Grades" asp-action="GradeCalc" id="navbarlist">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/js/JavaScript.js"></script>
+</body>
+</html>
